@@ -11,7 +11,15 @@ export default function ResultTable({data}){
                 </tr>
             </thead>
             <tbody>
-
+                {data.map((item) => (
+                    <tr>
+                        <td>{item.year}</td>
+                        <td>{item.interest.toFixed(2)}</td>
+                        <td>{item.valueEndOfYear.toFixed(2)}</td>
+                        <td>{item.annualInvestment.toFixed(2)}</td>
+                        <td>{item.year.toFixed(2)}</td>
+                    </tr>
+                ))}
             </tbody>
         </table>
     )
