@@ -8,11 +8,15 @@ export default function Controls({inputs, onInputChangeApp}){
     }
 
     return (
-        <div id="user-input">
-            <Control input={inputs[0]} onValueChangeParent={onInputChange} /> 
-            <Control input={inputs[1]} onValueChangeParent={onInputChange} /> 
-            <Control input={inputs[2]} onValueChangeParent={onInputChange} /> 
-            <Control input={inputs[3]} onValueChangeParent={onInputChange} /> 
-        </div>
+        <section id="user-input">
+            <div className="input-group">
+                <Control input={inputs[0]} onValueChangeParent={onInputChange} /> 
+                <Control input={inputs[1]} onValueChangeParent={onInputChange} /> 
+            </div>
+            <div className="input-group">
+                <Control input={inputs[2]} onValueChangeParent={onInputChange} /> 
+                <Control input={inputs[3]} onValueChangeParent={onInputChange} /> 
+            </div>
+        </section>
     )
 }

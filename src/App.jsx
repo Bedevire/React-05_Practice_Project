@@ -8,8 +8,8 @@ import { useState } from 'react'
 function App() {
 
   const [inputs, setInputs] = useState([
-    {title:"Initial Investment", initialValue:10000}, 
-    {title:"Annual Investment", initialValue:1201}, 
+    {title:"Initial Investment", initialValue:15000}, 
+    {title:"Annual Investment", initialValue:1200}, 
     {title:"Return Expected", initialValue:6}, 
     {title:"Duration", initialValue:10}
   ]);

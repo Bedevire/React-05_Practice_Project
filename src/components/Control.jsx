@@ -9,9 +9,9 @@ export default function Control({input, onValueChangeParent}){
     const [currentValue, setCurrentValue] = useState(input.initialValue);
 
     return(
-        <>
+        <p>
             <label>{input.title}</label>
             <input type="number" value={currentValue} onChange={onValueChange}></input>
-        </>
+        </p>
     )
 }
